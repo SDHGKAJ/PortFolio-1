@@ -30,20 +30,18 @@ body {
 }
 .header a {
     text-decoration: none;
-    color: #03e9f4;
+    color: #b0c4d8;
+    font-weight: bold;
     font-size: large;
     padding: 20px;
     font-size: x-large;
 }
-
-.header a:hover {
-    
-    margin-bottom: 1%;
-    margin-left: 1%;
-
-
-    
+header a:hover {
+    color: #03e9f4;
+    cursor: pointer;
+    position: relative;
 }
+
 
 .navbar a {
     
@@ -52,22 +50,15 @@ body {
 }
 .navbar a{
     position: relative;
-    color: #03e9f4;
+    color: #b0c4d8;
     font-weight: bold;
     transition: .5s;
     overflow: hidden;
 }
 .navbar a:hover{
-    color: azure;
+    color: #03e9f4;
     cursor: pointer;
     position: relative;
-    background-color:  #03e9f4;
-    color: black;
-    box-shadow: 0 0 5px  #03e9f4,
-                0 0 25px  #03e9f4,
-                0 0 50px  #03e9f4,
-                0 0 200px  #03e9f4;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#000);
 }
 
 
@@ -82,13 +73,14 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
-    margin-top: -50px; /* Add this line or adjust the value */
+    margin-top: -70px; /* Add this line or adjust the value */
 }
 
 .home-cont {
     margin-left: 40px;
     font-size: 25px;
     color: #b0c4d8;
+    
 }
 
 .footer {
@@ -136,7 +128,7 @@ body {
     -webkit-box-reflect: none;
 }
 
-.card, .card-2, .card-3, .card-4, .card-5, .card-6 {
+.card, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8 {
     width: 190px;
     height: 254px;
     background: #07182E;
@@ -150,13 +142,13 @@ body {
 }
 
 /* Shared image and h2 styling */
-.card img, .card-2 img, .card-3 img, .card-4 img, .card-5 img, .card-6 img {
+.card img, .card-2 img, .card-3 img, .card-4 img, .card-5 img, .card-6 img, .card-7 img, .card-8 img {
     z-index: 2;
     width: 100px;
     position: absolute;
 }
 
-.card h2, .card-2 h2, .card-3 h2, .card-4 h2, .card-5 h2, .card-6 h2 {
+.card h2, .card-2 h2, .card-3 h2, .card-4 h2, .card-5 h2, .card-6 h2, .card-7 h2, .card-8 h2 {
     z-index: 2;
     font-size: 20px;
     color: #03e9f4;
@@ -165,8 +157,8 @@ body {
     margin-top: 150px;
 }
 
-/* Animated border for both cards */
-.card::before, .card-2::before, .card-3::before, .card-4::before, .card-5::before, .card-6::before {
+/* Animated border for all cards */
+.card::before, .card-2::before, .card-3::before, .card-4::before, .card-5::before, .card-6::before, .card-7::before, .card-8::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -187,7 +179,7 @@ body {
     z-index: 0;
 }
 
-.card::after, .card-2::after, .card-3::after, .card-4::after, .card-5::after, .card-6::after {
+.card::after, .card-2::after, .card-3::after, .card-4::after, .card-5::after, .card-6::after, .card-7::after, .card-8::after {
     content: '';
     position: absolute;
     background: #07182E;
