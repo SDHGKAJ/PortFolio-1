@@ -128,7 +128,7 @@ header a:hover {
     -webkit-box-reflect: none;
 }
 
-.card, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8 {
+.card, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9, .card-10 {
     width: 190px;
     height: 254px;
     background: #07182E;
@@ -142,13 +142,13 @@ header a:hover {
 }
 
 /* Shared image and h2 styling */
-.card img, .card-2 img, .card-3 img, .card-4 img, .card-5 img, .card-6 img, .card-7 img, .card-8 img {
+.card img, .card-2 img, .card-3 img, .card-4 img, .card-5 img, .card-6 img, .card-7 img, .card-8 img, .card-9 img, .card-10 img {
     z-index: 2;
     width: 100px;
     position: absolute;
 }
 
-.card h2, .card-2 h2, .card-3 h2, .card-4 h2, .card-5 h2, .card-6 h2, .card-7 h2, .card-8 h2 {
+.card h2, .card-2 h2, .card-3 h2, .card-4 h2, .card-5 h2, .card-6 h2, .card-7 h2, .card-8 h2, .card-9 h2, .card-10 h2 {
     z-index: 2;
     font-size: 20px;
     color: #03e9f4;
@@ -157,8 +157,9 @@ header a:hover {
     margin-top: 150px;
 }
 
+
 /* Animated border for all cards */
-.card::before, .card-2::before, .card-3::before, .card-4::before, .card-5::before, .card-6::before, .card-7::before, .card-8::before {
+.card::before, .card-2::before, .card-3::before, .card-4::before, .card-5::before, .card-6::before, .card-7::before, .card-8::before, .card-9::before, .card-10::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -179,7 +180,7 @@ header a:hover {
     z-index: 0;
 }
 
-.card::after, .card-2::after, .card-3::after, .card-4::after, .card-5::after, .card-6::after, .card-7::after, .card-8::after {
+.card::after, .card-2::after, .card-3::after, .card-4::after, .card-5::after, .card-6::after, .card-7::after, .card-8::after, .card-9::after, .card-10::after {
     content: '';
     position: absolute;
     background: #07182E;
@@ -269,7 +270,7 @@ header a:hover {
     letter-spacing: 1px;
 }
 .about-box {
-    background: rgba(30, 34, 40, 0.85); /* Light black with some transparency */
+    background: rgba(30, 34, 40, 0.85); 
     border-radius: 16px;
     padding: 24px 28px;
     margin-top: 60px;
@@ -292,4 +293,129 @@ header a:hover {
     align-items: flex-start;
     gap: 40px; /* space between cards */
     flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.box-for-projects{
+    border-width: 5px;
+    border-color: grey;
+    height: 600px;
+    width: 1000px;
+    border-style: solid;
+    margin-top: 75px;
+    margin-left: 17%;
+    background-color: #1f242e;
+    display: flex;              /* Add this */
+    align-items: flex-start;    /* Align items to the top */
+    gap: 40px;                  /* Space between image and new-box */
+    position: relative; /* Needed for absolute positioning of the icon */
+}
+.box-for-projects img {
+    margin-left: 60px;      /* Move image more to the right */
+    margin-top: 130px;        /* Adjust vertical alignment as needed */
+    height: 300px;           /* Increase image height */
+    width: 400px;            /* Increase image width */
+    z-index: 1;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+
+.project-arrow {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    left: auto;
+    top: auto;
+    transform: none;
+    font-size: 32px;
+    color: #03e9f4;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.2s;
+}
+
+.project-arrow:hover {
+    color: #00b7ff;
+    size: bigger;
+    transform: scale(1.1);
+    transition: color 0.2s, transform 0.2s;
+    cursor: pointer;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    left: auto;
+    top: auto;
+    transform: none;
+    font-size: 32px;
+    color: #03e9f4;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.project-arrow-left {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    font-size: 32px;
+    color: #03e9f4;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.2s;
+}
+    
+.project-arrow-left:hover {
+    color: #00b7ff;
+    transform: scale(1.1);
+     left: auto;
+    top: auto;
+    transform: none;
+    font-size: 32px;
+    color: #03e9f4;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.2s, transform 0.2s;
+    
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    
+
+}
+
+.new {
+    background: #232a36;
+    border: 2px solid #03e9f4;
+    border-radius: 18px;
+    padding: 32px 36px;
+    margin-top: 100px;
+    box-shadow: 0 0 16px 2px #03e9f4, 0 4px 24px rgba(3,233,244,0.08);
+    color: #b0c4d8;
+    font-size: 1.1em;
+    max-width: 400px;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 80px;
+    position: relative; /* Needed for absolute positioning */
+}
+
+.new h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-right: 30px;
+    position: relative;
+    top: -20px; /* Moves the h2 20px up */
+}
+
+/* Remove the span tag styling for .material-symbols-outlined inside .new */
+.new .material-symbols-outlined {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    font-size: 32px;
+    color: #03e9f4;
+    cursor: pointer;
 }
