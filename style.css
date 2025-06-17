@@ -419,3 +419,16 @@ header a:hover {
     color: #03e9f4;
     cursor: pointer;
 }
+
+.project-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #03e9f4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.project-link:hover {
+  color: #00b7ff;
+  text-decoration: none;
+}
